@@ -1,0 +1,579 @@
+Library Management System – Computer Science Project
+
+
+Topic: Library Management System using Python and SQLite
+Total length: 34 pages
+Format: School-project style, suitable for both softcopy and hardcopy.
+Page 1 – Cover Page
+COMPUTER SCIENCE PROJECT
+
+
+
+
+
+
+
+
+cards.algoreducation.com
+
+
+LIBRARY MANAGEMENT SYSTEM
+A Python and SQLite Based Project
+
+Submitted by: _______ayush ranjan___________
+
+Class / Section: ___12M_______________
+
+Roll Number: _____1_____________
+
+School: ______rps____________
+
+Academic Session: ___26-27_______________
+
+Submitted to: __teacher________________
+
+Page 2 – Certificate
+CERTIFICATE
+
+This is to certify that ______ayush____________ of Class ___12_______, Roll No. _____1_____, has successfully completed the Computer Science project titled "Library Management System" during the academic session __26-27________.
+
+The project has been prepared under my guidance. The work presented here demonstrates the student's understanding of Python programming, database management and problem-solving.
+
+Teacher's Signature: ______________
+
+External Examiner: ______________
+
+Date: __17____________
+
+School Seal: ______________
+Page 3 – Declaration
+DECLARATION
+
+I hereby declare that this Computer Science project entitled "Library Management System" is prepared by me as part of my academic work.
+
+I have made an effort to understand the problem, plan the solution, write and test the Python program, and explain the database used in this project.
+
+The information and references used have been acknowledged in the bibliography.
+
+Student's Name: _____ayush_________
+
+Signature: ____ayush__________
+
+Date: ______17________
+Page 4 – Acknowledgement
+ACKNOWLEDGEMENT
+
+I would like to express my sincere gratitude to my Computer Science teacher for valuable guidance and support during this project.
+
+I am thankful to my school, my parents and my classmates for their encouragement.
+
+This project has helped me understand how programming can solve practical problems.
+Page 5 – Index
+S. No.	Topic
+1	Cover Page
+2	Certificate
+3	Declaration
+4	Acknowledgement
+5	Index
+6	Introduction
+7	Problem Statement
+8	Objectives
+9	Scope of Project
+10	Existing System
+11	Proposed System
+12	Feasibility Study
+13	Hardware Requirements
+14	Software Requirements
+15	Technologies Used
+16	System Design
+17	Flowchart
+18	Data Flow Diagram
+19	Database Design
+20	Data Dictionary
+21	Algorithms
+22	Testing Plan
+23–27	Python Source Code
+28	Sample Output
+29	Test Results
+30	Advantages and Limitations
+31	Future Scope
+32	Conclusion
+33	Bibliography
+34	Viva-Voce Questions
+
+
+Page 6 – Introduction
+A library is a place where books and other learning resources are collected, organised and made available to readers. In a school, the library supports classroom learning, independent reading and research.
+
+When the number of books and members increases, maintaining every record manually becomes time-consuming.
+
+A Library Management System is a computer-based application that helps manage these activities.
+
+This project uses Python for program logic and SQLite for storing information. The application allows a librarian to:
+- Add and search books.
+- Register library members.
+- Issue books to members.
+- Record returned books.
+- Check available books.
+Page 7 – Problem Statement
+In a manual library, book details and lending transactions are often written in registers.
+
+This method can create several difficulties:
+1. Searching for a particular book may take time.
+2. Records may be missed or written incorrectly.
+3. The librarian must manually update available copies.
+4. It can be difficult to identify which member has borrowed a book.
+5. Preparing a list of issued books requires checking several records.
+Solution: To design a simple computer program that stores book and member information, records lending transactions and updates book availability automatically.
+Page 8 – Objectives of the Project
+The main objectives of this project are:
+1. To understand how a library can be managed using a computer program.
+2. To store book details such as title, author and category.
+3. To register library members.
+4. To search for books using keywords.
+5. To issue books to registered members.
+6. To calculate the due date automatically.
+7. To record book returns.
+8. To update available copies automatically.
+9. To display currently issued books.
+10. To improve programming skills using Python.
+Page 9 – Scope of the Project
+The project is designed for a small school library.
+
+Included features:
+- Adding new books.
+- Displaying all available books.
+- Searching books by title, author or category.
+- Registering library members.
+- Issuing books.
+- Returning books.
+- Displaying issued-book records.
+- Automatically updating book availability.
+Limitations of the scope:
+
+This version does not include online accounts, barcode scanning, fine payment or email reminders. These features can be added in future versions.
+Page 10 – Existing System
+The traditional library system uses paper registers, index cards or spreadsheets.
+
+Working of the manual system:
+1. The librarian checks a register to find a book.
+2. The member's name and book details are written down.
+3. The issue date and return date are recorded.
+4. On return, the librarian locates the entry.
+5. The available number of copies is updated manually.
+Disadvantages:
+- Repeated writing takes time.
+- Handwriting can be difficult to read.
+- Records may be misplaced.
+- Searching can be slow.
+- Mistakes may occur while updating records.
+Page 11 – Proposed System
+The proposed system is a menu-driven Python application connected to an SQLite database.
+
+The librarian selects an option from the main menu. The program calls the related function.
+
+For example:
+- The Add Book option stores new book details.
+- The Search Book option searches for a particular book.
+- The Issue Book option checks availability and records the transaction.
+- The Return Book option updates the transaction status.
+SQLite stores all information in a local file named library.db.
+
+This makes the system more organised and reduces manual work.
+Page 12 – Feasibility Study
+A feasibility study determines whether the proposed project can be developed successfully.
+
+1. Technical Feasibility
+
+Python and SQLite are freely available and can run on an ordinary computer.
+
+2. Economic Feasibility
+
+The software tools are free. Only a computer and development time are required.
+
+3. Operational Feasibility
+
+The menu is simple and uses numbered options, making it easy to operate.
+
+4. Schedule Feasibility
+
+The project is small enough to be planned, coded and tested within a reasonable period.
+
+Conclusion: The proposed system is technically, economically and operationally feasible for a school project.
+Page 13 – Hardware Requirements
+The following hardware is suggested:
+Component	Requirement
+Computer	Desktop or laptop
+Processor	Modern entry-level processor
+RAM	2 GB or more
+Storage	100 MB free space recommended
+Input device	Keyboard and mouse
+Output device	Monitor
+Printer	Optional
+
+The program is small and does not require a high-performance computer.
+Page 14 – Software Requirements
+The software requirements are:
+1. Operating System – Windows, Linux or macOS.
+2. Programming Language – Python 3.
+3. Database – SQLite.
+4. Editor – IDLE, VS Code or PyCharm.
+5. Terminal – Command Prompt or PowerShell.
+The sqlite3 and datetime modules are included in standard Python installations.
+
+No internet connection is needed while running the application.
+Page 15 – Technologies Used
+1. Python
+
+Python is a high-level programming language. It is used to write the logic of the Library Management System.
+
+2. SQLite
+
+SQLite is a lightweight relational database. It stores book details, member details and transactions.
+
+3. SQL
+
+SQL stands for Structured Query Language. It is used to create tables, insert records, retrieve information and update data.
+
+4. Datetime Module
+
+Python's datetime module helps calculate the due date of an issued book.
+Page 16 – System Design
+The application follows a simple three-part structure.
+
+1. Input Layer
+
+The librarian enters menu choices, book details, member details and record IDs.
+
+2. Processing Layer
+
+Python functions validate the input and decide which operation should take place.
+
+3. Data Layer
+
+SQLite stores books, members and transactions.
+USER / LIBRARIAN
+Enters information
+
+PYTHON PROGRAM
+Processes and validates data
+
+SQLITE DATABASE
+Stores and updates records
+
+Result: Confirmation or information displayed to the user.
+
+
+Page 17 – Flowchart
+The flowchart represents the overall working of the program.
+START
+Create database tables
+Display main menu
+Read user's choice
+Run selected operation
+Is choice 9?
+
+NO
+Display menu again
+Repeat
+YES
+END
+
+
+
+Page 18 – Data Flow Diagram (DFD)
+A Data Flow Diagram shows how information moves through the system.
+
+Context-level diagram:
+LIBRARIAN
+
+Book details, member details and menu choices
+
+LIBRARY MANAGEMENT SYSTEM
+
+Processes requests and displays results
+
+LIBRARY DATABASE
+
+Books · Members · Transactions
+
+
+The librarian supplies information to the system. The system validates it and reads or updates the relevant database records.
+Page 19 – Database Design
+The project uses a relational database with three tables.
+
+1. BOOKS TABLE
+
+Stores book details and copy counts.
+
+Primary key: book_id
+
+2. MEMBERS TABLE
+
+Stores details of registered readers.
+
+Primary key: member_id
+
+3. TRANSACTIONS TABLE
+
+Stores each issue and return event.
+
+Primary key: transaction_id
+
+Relationship:
+- One book can appear in many transactions.
+- One member can have many transactions.
+- Each transaction connects one book with one member.
+Page 20 – Data Dictionary
+A data dictionary describes the fields used in the database.
+
+BOOKS TABLE
+Field	Description
+book_id	Unique book ID
+title	Book title
+author	Author name
+category	Book category
+total_copies	Total copies
+available_copies	Available copies
+
+MEMBERS TABLE
+Field	Description
+member_id	Unique member ID
+name	Member name
+class_name	Class or section
+phone	Contact number
+
+TRANSACTIONS TABLE
+Field	Description
+transaction_id	Unique transaction ID
+book_id	Book reference
+member_id	Member reference
+issue_date	Date of issue
+due_date	Expected return date
+return_date	Actual return date
+status	Issued or returned
+
+Page 21 – Algorithms
+An algorithm is a step-by-step procedure used to solve a problem.
+
+A. Algorithm to Add a Book
+1. Start.
+2. Enter book title and author.
+3. Enter category and number of copies.
+4. Validate the entered details.
+5. Insert the book into the database.
+6. Display a success message.
+7. Stop.
+B. Algorithm to Issue a Book
+1. Start.
+2. Enter Book ID and Member ID.
+3. Check whether both records exist.
+4. Check book availability.
+5. Save the transaction.
+6. Reduce available copies by one.
+7. Display the due date.
+8. Stop.
+C. Algorithm to Return a Book
+1. Start.
+2. Enter Transaction ID.
+3. Check whether the transaction exists.
+4. Check whether it is already returned.
+5. Update the return date and status.
+6. Increase available copies by one.
+7. Display confirmation.
+8. Stop.
+Page 22 – Testing Plan
+Testing is performed to check whether the program works correctly.
+Test	Input	Expected result
+Add book	Valid details	Book saved
+Add book	Zero copies	Input rejected
+Search book	Existing title	Book displayed
+Register member	Valid name	Member saved
+Issue book	Valid IDs	Book issued
+Issue book	Invalid ID	Error displayed
+Return book	Valid transaction	Book returned
+Return book	Already returned	Second return prevented
+Menu	Invalid choice	Error displayed
+
+
+Page 23 – Python Source Code (Part 1)
+Database Setup and Book Operations
+
+The following code creates the database tables and provides functions to add, view and search books.
+import sqlite3from datetime import date, timedeltaDB_NAME = "library.db"ISSUE_DAYS = 14def connect():    return sqlite3.connect(DB_NAME)def create_tables():    with connect() as con:        con.execute("""            CREATE TABLE IF NOT EXISTS books (                book_id INTEGER PRIMARY KEY AUTOINCREMENT,                title TEXT NOT NULL,                author TEXT NOT NULL,                category TEXT,                total_copies INTEGER NOT NULL,                available_copies INTEGER NOT NULL            )        """)        con.execute("""            CREATE TABLE IF NOT EXISTS members (                member_id INTEGER PRIMARY KEY AUTOINCREMENT,                name TEXT NOT NULL,                class_name TEXT,                phone TEXT            )        """)        con.execute("""            CREATE TABLE IF NOT EXISTS transactions (                transaction_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+
+
+Page 24 – Python Source Code (Part 2)
+Member Registration and Display
+
+This section registers new members and displays the registered member list.
+def add_member():    name = input("Member name: ").strip()    class_name = input("Class/section: ").strip()    phone = input("Phone (optional): ").strip()    if not name:        print("Member name cannot be blank.")        return    with connect() as con:        con.execute("""            INSERT INTO members            (name, class_name, phone)            VALUES (?, ?, ?)        """, (name, class_name, phone))    print("Member registered successfully.")def view_members():    with connect() as con:        rows = con.execute("""            SELECT member_id, name, class_name, phone            FROM members            ORDER BY name        """).fetchall()    if not rows:        print("No members registered.")    else:        for row in rows:            print(row)
+
+
+
+Explanation:
+- add_member() collects the member's details.
+- view_members() displays all registered members.
+- SQLite automatically generates a unique Member ID.
+- The member ID is used when issuing books.
+Page 25 – Python Source Code (Part 3)
+Issue and Return Book Operations
+def issue_book():    try:        book_id = int(input("Book ID: "))        member_id = int(input("Member ID: "))    except ValueError:        print("IDs must be whole numbers.")        return    today = date.today()    due = today + timedelta(days=ISSUE_DAYS)    with connect() as con:        book = con.execute(            "SELECT available_copies FROM books WHERE book_id = ?",            (book_id,)        ).fetchone()        member = con.execute(            "SELECT member_id FROM members WHERE member_id = ?",            (member_id,)        ).fetchone()        if book is None:            print("Book ID does not exist.")            return        if member is None:            print("Member ID does not exist.")            return        if book[0] < 1:            print("No copy is currently available.")            return
+
+
+
+Page 26 – Python Source Code (Part 4)
+View Issued Books and Main Menu
+def view_issued_books():    with connect() as con:        rows = con.execute("""            SELECT t.transaction_id, b.title, m.name,                   t.issue_date, t.due_date, t.status            FROM transactions AS t            JOIN books AS b            ON t.book_id = b.book_id            JOIN members AS m            ON t.member_id = m.member_id            WHERE t.status = 'ISSUED'            ORDER BY t.due_date        """).fetchall()    if not rows:        print("There are no currently issued books.")    else:        for row in rows:            print(row)def show_menu():    print("\n========== LIBRARY MANAGEMENT SYSTEM ==========")    print("1. Add a book")    print("2. View all books")    print("3. Search for a book")    print("4. Register a member")    print("5. View members")
+
+
+
+Explanation:
+
+The view_issued_books() function displays the books that have not yet been returned.
+
+The SQL JOIN command connects the Books, Members and Transactions tables to display the relevant information together.
+Page 27 – Python Source Code (Part 5)
+Main Function and Program Execution
+def main():    create_tables()    while True:        show_menu()        choice = input(            "Choose an option (1-9): "        ).strip()        if choice == "1":            add_book()        elif choice == "2":            view_books()        elif choice == "3":            search_book()        elif choice == "4":            add_member()        elif choice == "5":            view_members()        elif choice == "6":            issue_book()        elif choice == "7":            return_book()        elif choice == "8":            view_issued_books()
+
+
+
+How to Run the Program
+1. Install Python 3 on your computer.
+2. Open IDLE or Visual Studio Code.
+3. Create a new Python file.
+4. Combine the five code sections in the given order.
+5. Save the file as library_management.py.
+6. Run the program.
+The database file library.db will be created automatically when the program runs.
+
+Page 28 – Sample Output
+The following is an example of how the program works.
+PYTHON TERMINAL
+
+========== LIBRARY MANAGEMENT SYSTEM ==========1. Add a book
+2. View all books
+3. Search for a book
+4. Register a member
+5. View members
+6. Issue a book
+7. Return a book
+8. View issued books
+9. Exit
+Choose an option: 1Book title: The Blue Umbrella
+Author: Ruskin Bond
+Category: Fiction
+Number of copies: 3Book added successfully.Choose an option: 4Member name: Aarav Kumar
+Class/section: XII-AMember registered successfully.Choose an option: 6Book ID: 1
+Member ID: 1Book issued.
+Due date: 2026-12-01
+
+Illustrative output only; the actual due date depends on the date the program is run.
+Page 29 – Test Results
+The following table shows the expected results of the main tests.
+Test case	Expected result
+Add valid book	Book saved
+Enter zero copies	Input rejected
+Search existing book	Book displayed
+Register member	Member saved
+Issue available book	Transaction created
+Enter invalid Book ID	Error message
+Issue unavailable book	Issue prevented
+Return issued book	Return recorded
+Return same book again	Second return prevented
+Enter invalid menu choice	Error message
+
+Result: The program is designed to perform the main library operations and handle common invalid inputs.
+Page 30 – Advantages and Limitations
+Advantages
+1. Faster searching than paper registers.
+2. Book and member details are stored systematically.
+3. Available copies are updated automatically.
+4. Due dates are calculated by the program.
+5. Reduces repeated manual work.
+6. SQLite stores records in a local database.
+7. Python makes the program easy to understand.
+Limitations
+1. The interface is text-based.
+2. It is designed for a single local user at a time.
+3. It does not include a login system.
+4. It does not calculate late-return fines.
+5. It does not send reminders.
+6. It does not support barcode scanning.
+
+Page 31 – Future Scope
+The Library Management System can be improved in several ways:
+1. Graphical User Interface: Add buttons, forms and tables using Tkinter.
+2. Login System: Provide separate librarian and administrator accounts.
+3. Fine Calculation: Calculate fines for late book returns.
+4. Reports: Generate daily, monthly and yearly reports.
+5. Barcode Scanning: Scan book barcodes for quick identification.
+6. Notifications: Send reminders before the due date.
+7. Database Backup: Create safe copies of the database.
+8. Online Access: Allow authorised users to access the system from different computers.
+9. Book Reservation: Allow members to reserve unavailable books.
+These improvements can make the system more advanced and useful.
+Page 32 – Conclusion
+The Library Management System project demonstrates how Python and SQLite can be used to solve a common record-management problem.
+
+The program stores book and member details, supports searching, records issue and return transactions, and updates the available-copy count.
+
+Through this project, I learned about Python functions, loops, conditional statements, SQL queries, database management and problem-solving.
+
+Although this version is simple, it provides a useful foundation for developing a larger library application.
+
+The project shows that computers can make library work more organised, accurate and efficient.
+Page 33 – Bibliography
+The following resources were used for learning and reference:
+
+1. Python Software Foundation – Python 3 Documentation
+https://docs.python.org/3/
+
+2. Python Software Foundation – SQLite3 Module
+https://docs.python.org/3/library/sqlite3.html
+
+3. SQLite – Official Documentation
+https://www.sqlite.org/docs.html
+
+4. Python Software Foundation – Datetime Module
+https://docs.python.org/3/library/datetime.html
+
+5. Computer Science textbook and classroom notes.
+Page 34 – Viva-Voce Questions
+1. What is a Library Management System?
+
+It is a computer application used to manage books, members and lending records.
+
+2. Which programming language is used in this project?
+
+Python.
+
+3. Which database is used?
+
+SQLite.
+
+4. What is a database?
+
+A database is an organised collection of information.
+
+5. What is a primary key?
+
+A primary key uniquely identifies each record in a table.
+
+6. What is a foreign key?
+
+A foreign key connects one table with another table.
+
+7. What does SQL stand for?
+
+Structured Query Language.
+
+8. Why are functions used in Python?
+
+Functions divide a program into smaller reusable parts.
+
+9. What is the purpose of the issue date?
+
+It records the date on which a book
